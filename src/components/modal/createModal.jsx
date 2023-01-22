@@ -37,7 +37,6 @@ const CreateModal = () => {
   const dispatch = useDispatch();
   useEffect(() =>{
     isUpdate && (
-      console.log(note),
       setColor(note.color),
       setContent(note.content),
       setPriority(note.priority),

@@ -69,7 +69,7 @@ const Notes = () => {
             <PulseLoader color="#1D4ED8" size={8}/>
           </LoadingIndicator>
           <div className=" grid gap-4 mt-6 auto-fit overflow-auto">
-            {!isLoading && pinnedNote.map((e, i) =>  <Note note={e} key={i}/> )}
+            {!isLoading && pinnedNote.map((e, i) =>  <Note note={e}  key={i}/> )}
           </div>
         </div>
         <div  className="mt-5">

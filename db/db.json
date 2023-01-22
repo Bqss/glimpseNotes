@@ -2,7 +2,7 @@
   "notes": [
     {
       "id": "ec4fae33-3fb5-4288-812b-2f983655785f",
-      "isSoftDelete": true,
+      "isSoftDelete": false,
       "createdAt": "Sun, 22 Jan 2023 11:08:11 GMT",
       "updatedAt": "Sun, 22 Jan 2023 11:08:11 GMT",
       "title": "makan",
@@ -15,16 +15,35 @@
       ],
       "color": "#ccffcc",
       "priority": "high",
-      "isArchived": false,
       "isPinned": false,
       "isRead": false,
-      "date": "Sun, 22 Jan 2023 11:08:11 GMT"
+      "date": "Sun, 22 Jan 2023 11:08:11 GMT",
+      "isArchived": true
+    },
+    {
+      "id": "1dcdd12a-8756-4c2c-b841-fce0c1476b7c",
+      "isSoftDelete": true,
+      "createdAt": "Sun, 22 Jan 2023 13:36:44 GMT",
+      "updatedAt": "Sun, 22 Jan 2023 13:36:44 GMT",
+      "title": "gh",
+      "content": "hfhdf",
+      "tags": [],
+      "color": "#ffcccc",
+      "priority": "low",
+      "isPinned": false,
+      "isRead": false,
+      "date": "Sun, 22 Jan 2023 13:36:44 GMT",
+      "isArchived": false
     }
   ],
   "tag": [
     {
       "id": "8f2a9d07-4651-4e7d-973f-272c736e7d3f",
       "value": "life"
+    },
+    {
+      "id": "7774f8a6-01e9-4652-b23e-5cd34408a032",
+      "value": "safsdf"
     }
   ]
 }

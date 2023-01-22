@@ -17,7 +17,7 @@ const Trash = () => {
             <PulseLoader color="#1D4ED8" size={8}/>
           </LoadingIndicator>
           <div className=" grid gap-4 mt-6 auto-fit overflow-auto">
-            {trashedNotes.map((e, i) =>  <Note note={e} key={i} />)}
+            {trashedNotes.map((e, i) =>  <Note note={e} type="trash" key={i} />)}
           </div>
         </div>
       </div>

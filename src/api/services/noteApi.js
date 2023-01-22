@@ -35,27 +35,27 @@ export const  noteApi = createApi({
             }),
             invalidatesTags : ["notes"]
         }),
-        softDeleteNote : builder.mutation({
+        toggleSoftDeleteNote : builder.mutation({
             query : ({id , isSoftDelete, ...patch}) => ({
                 url : `notes/${id}`,
                 method : "PUT",
                 body : {
                     id,
-                    isSoftDelete : true ,
+                    isSoftDelete : !isSoftDelete ,
                     ...patch
                 }
             }),
             invalidatesTags : (result, error, {id} ) => ([{type: "notes", id}])
         }),
-        archiveNote : builder.mutation({
-            query: ({id, ...patch}) => {
+        toggleArchiveNote : builder.mutation({
+            query: ({id, isArchived,...patch}) => {
                 return {
                     url : `notes/${id}`,
                     method : "PUT",
                     body : {
                         id,
                         ...patch,
-                        isArchived : true
+                        isArchived : !isArchived
                     }
                 }
             },
@@ -92,5 +92,5 @@ export const  noteApi = createApi({
 })
 
 
-export const {useGetAllNoteQuery , useCreateNoteMutation , useDeleteNoteMutation, useArchiveNoteMutation, useUpdateNoteMutation, useToggleNotePinMutation, useSoftDeleteNoteMutation} = noteApi;
+export const {useGetAllNoteQuery , useCreateNoteMutation , useDeleteNoteMutation, useToggleArchiveNoteMutation, useUpdateNoteMutation, useToggleNotePinMutation, useToggleSoftDeleteNoteMutation} = noteApi;
 

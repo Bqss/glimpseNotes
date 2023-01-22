@@ -21,7 +21,7 @@ const Archive = () => {
           </LoadingIndicator>
           <div className=" grid gap-4 mt-6 auto-fit overflow-auto">
             {!isLoading &&
-              archivedNote.map((e, i) =>  <Note note={e} key={i} />)}
+              archivedNote.map((e, i) =>  <Note note={e} type="archive" key={i} />)}
           </div>
         </div>
       </div>

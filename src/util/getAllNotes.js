@@ -1,5 +1,5 @@
 const filltereNotes = (notes, filterKey) => {
-    const lowPriority = notes.filter(e => e.priority === "low") ?? [];
+    const lowPriority = notes.filter(e => e.priority === "low" ) ?? [];
     const highPriority = notes.filter(e => e.priority === "high")?? [];
     switch(filterKey){
         case "low":
@@ -19,7 +19,7 @@ const filltereNotes = (notes, filterKey) => {
 
 const getAllNote = (notes, filter, searchKey) => {
     const fNotes = filltereNotes(notes,filter);
-    return fNotes.filter(e => e.content.includes(searchKey) || e.title.includes(searchKey));
+    return fNotes.filter(e => (e.content.includes(searchKey) || e.title.includes(searchKey)));
 }
 
 
