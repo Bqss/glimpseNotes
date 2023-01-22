@@ -1,0 +1,30 @@
+{
+  "notes": [
+    {
+      "id": "ec4fae33-3fb5-4288-812b-2f983655785f",
+      "isSoftDelete": true,
+      "createdAt": "Sun, 22 Jan 2023 11:08:11 GMT",
+      "updatedAt": "Sun, 22 Jan 2023 11:08:11 GMT",
+      "title": "makan",
+      "content": "makan adalah suatu hal yang sangat penting untuk dilakukan ",
+      "tags": [
+        {
+          "id": "8f2a9d07-4651-4e7d-973f-272c736e7d3f",
+          "value": "life"
+        }
+      ],
+      "color": "#ccffcc",
+      "priority": "high",
+      "isArchived": false,
+      "isPinned": false,
+      "isRead": false,
+      "date": "Sun, 22 Jan 2023 11:08:11 GMT"
+    }
+  ],
+  "tag": [
+    {
+      "id": "8f2a9d07-4651-4e7d-973f-272c736e7d3f",
+      "value": "life"
+    }
+  ]
+}
